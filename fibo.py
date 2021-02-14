@@ -1,19 +1,19 @@
-print("Fibonacci sequence:")
-nt = int(input("Enter the number of terms:"))
+def fib(n):
 
-n1, n2 = 0, 1
-count = 0
+    a = 0
+    b = 1
 
+   
+    print(a)
+    print(b)
 
-if nt <= 0:
-   print("Error")
+    for i in range(2,n):
+        c = a + b
+        a = b
+        b = c
+        print(c)
 
-else:
+fib(8)
+ 
+
   
-   while count < nt:
-       print(n1)
-       nth = n1 + n2
-     
-       n1 = n2
-       n2 = nth
-       count += 1
